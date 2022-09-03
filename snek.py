@@ -65,8 +65,13 @@ def main():
         left = left_movement_handler(keys_pressed, left)
         right = right_movement_handler(keys_pressed, right)
 
+        if(WINNER_TEXT):
+            print(WINNER_TEXT)
+            RUN = False
+        else:
+            draw_window(left, right)
 
-        draw_window(left, right)
+
 
 
 
